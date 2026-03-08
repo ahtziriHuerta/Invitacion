@@ -1,0 +1,521 @@
+@font-face {
+    font-family: "alianafont";
+    src: url("fonts/Aliana-Regular.ttf") format("truetype");
+}
+
+body{
+    margin:0;
+    background:#2f3b33;
+    display:flex;
+    flex-direction:column; /* esto hace que se acomoden verticalmente */
+    align-items:center;
+}
+
+.invitacion{
+    width:100%;
+    max-width:420px;
+    min-height:100vh;
+    background:#e9e4db;
+    text-align:center;
+    padding:40px 25px;
+    box-sizing:border-box;
+}
+
+/* IMAGEN */
+
+.imagen-principal{
+    width:90%;
+    max-width:340px;
+    aspect-ratio:1/1;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:30px;
+}
+
+/* TITULO */
+
+.titulo{
+    font-family: "EB Garamond", serif;
+    font-size:28px;
+    font-weight:600;
+    color:#5c7569;
+    
+}
+
+/* NOMBRES */
+
+.nombres{
+    font-family:"alianafont";
+    font-size:70px;
+    color:#5c7569;
+    line-height:1.1;
+}
+
+/* & */
+
+.and{
+    font-family:"alianafont";
+    font-size:40px;
+    color:#5c7569;
+    margin:10px 0;
+}
+
+/* FECHA */
+
+.fecha{
+    margin-top:30px;
+    font-size:22px;
+    letter-spacing:3px;
+    color:#5c7569;
+}
+
+/* BOTON */
+
+.boton{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    border:2px solid #5c7569;
+    color:#5c7569;
+    text-decoration:none;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.frase{
+    width:100%;
+    max-width:420px;
+    margin:0 auto;
+    background:#7c8c72;
+    color:white;
+    text-align:center;
+    padding:80px 30px;
+    box-sizing:border-box;
+}
+
+.texto-frase{
+    font-family:"EB Garamond", serif;
+    font-size:22px;
+    line-height:1.8;
+}
+
+.corazon{
+    margin-top:30px;
+    font-size:26px;
+}
+
+.padres{
+    width:100%;
+    max-width:420px;
+    margin:0 auto;
+    background:#f3f3f3;
+    padding:40px 20px;
+    box-sizing:border-box;
+    color:#5c7569;
+}
+
+.padres-contenido{
+    border:2px solid #b89c6c;
+    padding:40px 25px;
+    text-align:center;
+}
+
+.intro{
+    font-family:"EB Garamond", serif;
+    font-size:26px;
+    line-height:1.6;
+    margin-bottom:40px;
+}
+
+.grupo{
+    margin-bottom:35px;
+}
+
+.grupo h3{
+    font-family:"EB Garamond", serif;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.grupo p{
+    font-family:"EB Garamond", serif;
+    font-size:18px;
+    margin:4px 0;
+}
+
+.final{
+    font-family:"EB Garamond", serif;
+    font-size:24px;
+    margin-top:30px;
+}
+
+/* SECCION CONTADOR */
+
+.contador{
+    width:100%;
+    max-width:420px;
+    margin:0 auto;
+    background:#f2f2f2;
+    text-align:center;
+    padding:80px 20px;
+    box-sizing:border-box;
+    position:relative;
+    overflow:hidden;
+    color:#5c7569;
+}
+
+/* TITULO */
+
+.contador h2{
+    font-family:"EB Garamond", serif;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+/* CONTENEDOR DEL TIEMPO */
+
+.tiempo{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    margin:30px 0;
+}
+
+/* BLOQUE INDIVIDUAL */
+
+.tiempo div{
+    text-align:center;
+}
+
+/* NUMEROS */
+
+.tiempo span{
+    display:block;
+    font-size:36px;
+    font-family:"EB Garamond", serif;
+}
+
+/* TEXTO DIAS HRS MIN SEG */
+
+.tiempo p{
+    font-size:14px;
+    letter-spacing:2px;
+    margin-top:5px;
+}
+
+/* TEXTO FINAL */
+
+.contador h3{
+    font-family:"EB Garamond", serif;
+    font-size:32px;
+    margin-top:20px;
+}
+
+
+.planta{
+    position:absolute;
+    width:280px;
+    pointer-events:none;
+}
+
+/* PLANTA ARRIBA DERECHA */
+
+.planta-arriba{
+    top:0;
+    right:0;
+}
+
+/* PLANTA ABAJO IZQUIERDA */
+
+.planta-abajo{
+    bottom:0;
+    left:0;
+}
+
+
+/* SECCION DONDE Y CUANDO */
+
+.lugar{
+    width:100%;
+    max-width:420px;
+    margin:0 auto;
+    padding:5px 25px 70px 25px; /* menos espacio arriba */
+    background:#f2f2f2;
+    text-align:center;
+    border-left:2px solid #c7a46c;
+    border-right:2px solid #c7a46c;
+    box-sizing:border-box;
+    color:#5c7569;
+}
+
+/* TITULO PRINCIPAL */
+
+.lugar h2{
+    font-family:"EB Garamond", serif;
+    font-size:44px;
+    margin-bottom:20px;
+}
+
+/* CONTENEDOR INTERNO */
+
+.lugar-contenido{
+    width:100%;
+    max-width:340px;
+    margin:0 auto;
+}
+
+/* IMAGEN */
+
+.lugar-img{
+    width:100%;
+    display:block;
+    margin:0 auto 45px auto;
+    border-radius:4px;
+}
+
+/* TITULO CEREMONIA */
+
+.lugar h3{
+    font-family:"EB Garamond", serif;
+    font-size:34px;
+    margin-bottom:12px;
+    line-height:1.2;
+}
+
+.lugar-nombre{
+    font-size:20px;
+    line-height:1.3;
+    margin-bottom:15px;
+}
+
+.lugar-hora{
+    font-size:20px;
+    margin-bottom:15px;
+    line-height:1.3;
+}
+
+.lugar-direccion{
+    font-size:18px;
+    line-height:1.3;
+}
+
+.boton-maps{
+    display:inline-block;
+    margin-top:0px;
+    padding:10px 26px;
+    border:1px solid #c7a46c;
+    border-radius:30px;
+    text-decoration:none;
+    font-family:"EB Garamond", serif;
+    font-size:18px;
+    color:#4f6458;
+    transition:0.3s;
+    }
+    
+    .boton-maps:hover{
+    background:#c7a46c;
+    color:white;
+    }
+
+
+.timeline{
+    max-width:420px;
+    margin:0 auto;
+    padding:80px 30px;
+    background:#f2f2f2;
+    position:relative;
+    text-align:center;
+    border-left:2px solid #c7a46c;
+    border-right:2px solid #c7a46c;
+    box-sizing:border-box;
+    color:#5c7569;
+    }
+
+/* TITULO */
+
+.timeline h2{
+    font-family:"EB Garamond", serif;
+    font-size:28px;
+    margin-bottom:80px;
+    line-height:1.4;
+    margin-top:0;
+    }
+
+/* LINEA VERTICAL */
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:60px;
+    top:180px;
+    bottom:80px;
+    width:2px;
+    background:#6b7c6c;
+    }
+
+/* EVENTO */
+
+.evento{
+    display:flex;
+    align-items:center;
+    margin-bottom:100px;
+    }
+
+/* ICONO */
+
+.icono{
+    width:120px;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    }
+
+/* CORAZON */
+
+.corazon{
+    width:46px;
+    height:46px;
+    background:#6b7c6c;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    z-index:2;
+    }
+
+.corazon::after{
+    content:"♡";
+    color:white;
+    font-size:20px;
+    }
+
+/* CONTENIDO */
+
+.contenido{
+    flex:1;
+    text-align:left;
+    padding-left:10px;
+    }
+
+/* HORA */
+
+.hora{
+    font-size:16px;
+    letter-spacing:2px;
+    margin-bottom:8px;
+    }
+
+/* TITULO */
+
+.contenido h3{
+    font-family:"EB Garamond", serif;
+    font-size:30px;
+    margin-bottom:15px;
+    }
+
+/* ICONOS */
+
+.contenido img{
+    width:120px;
+    margin-top:10px;
+    }
+
+
+
+.timeline{
+    max-width:420px;
+    margin:auto;
+    padding:80px 40px;
+    background:#f2f2f2;
+    position:relative;
+    font-family:"EB Garamond", serif;
+    }
+    
+    /* TITULO */
+    
+    .timeline h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:80px;
+    line-height:1.4;
+    }
+    
+    /* LINEA VERTICAL */
+    
+    .timeline::before{
+        content:"";
+        position:absolute;
+        left:80px;
+        top:260px;   /* antes estaba más arriba */
+        bottom:80px;
+        width:2px;
+        background:#6b7c6c;
+        }
+    
+    /* EVENTOS */
+    
+    .evento{
+    display:flex;
+    align-items:flex-start;
+    margin-bottom:100px;
+    position:relative;
+    }
+    
+    /* COLUMNA DEL ICONO */
+    
+    .icono{
+    width:80px;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    }
+    
+    /* CORAZON */
+    
+    .corazon{
+    width:42px;
+    height:42px;
+    background:#6b7c6c;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:2;
+    }
+    
+    .corazon::after{
+    content:"♡";
+    color:white;
+    font-size:18px;
+    }
+    
+    /* CONTENIDO */
+    
+    .contenido{
+    flex:1;
+    padding-left:20px;
+    }
+    
+    /* HORA */
+    
+    .hora{
+    font-size:14px;
+    letter-spacing:3px;
+    margin-bottom:10px;
+    }
+    
+    /* TITULO EVENTO */
+    
+    .contenido h3{
+    font-size:30px;
+    margin-bottom:15px;
+    line-height:1.2;
+    }
+    
+    /* ICONOS */
+    
+    .contenido img{
+    width:120px;
+    margin-top:10px;
+    }
