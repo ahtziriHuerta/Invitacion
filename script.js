@@ -6,14 +6,8 @@ function scrollInvitacion(){
     });
 }
 
-const musica = document.getElementById("musica");
 
-window.addEventListener("load", () => {
-    musica.muted = false;
-    musica.play().catch(() => {
-        console.log("El navegador bloqueó el autoplay");
-    });
-});
+
 
 let index = 0;
 const slides = document.querySelector(".slides");
@@ -164,3 +158,30 @@ invitados: JSON.stringify(invitadosConfirmacion)
 .catch(() => alert("Error al enviar"));
 
 }
+
+
+const musica = document.getElementById("musica");
+const btnMusica = document.getElementById("btnMusica");
+
+let reproduciendo = false;
+
+// iniciar música al primer toque
+document.addEventListener("click", () => {
+    if(!reproduciendo){
+        musica.play();
+        reproduciendo = true;
+    }
+}, { once:true });
+
+// botón encender / apagar
+btnMusica.addEventListener("click", () => {
+
+if(musica.paused){
+    musica.play();
+    btnMusica.innerHTML = "🔊";
+}else{
+    musica.pause();
+    btnMusica.innerHTML = "🔇";
+}
+
+});
