@@ -6,9 +6,6 @@ function scrollInvitacion(){
     });
 }
 
-
-
-
 let index = 0;
 const slides = document.querySelector(".slides");
 const total = document.querySelectorAll(".slides img").length;
@@ -125,7 +122,6 @@ lista.appendChild(item);
 document.querySelector(".lista").innerHTML = "Invitación no válida";
 
 }
-
 function confirmar(){
 
     let invitadosConfirmacion = [];
@@ -149,8 +145,8 @@ function confirmar(){
     })
     })
     .then(res => res.text())
-    .then(() => alert("Confirmación enviada"))
-    .catch(() => alert("Error al enviar"));
+    .then(() => mostrarMensaje("¡Gracias por confirmar! ❤️"))
+    .catch(() => mostrarMensaje("Ocurrió un error, intenta nuevamente"));
     
     }
 
@@ -187,3 +183,24 @@ if(musica.paused){
 });
 
 }
+
+
+function mostrarMensaje(texto){
+
+    const alerta = document.createElement("div");
+    alerta.className = "alerta-boda";
+    
+    alerta.innerHTML = `
+    <div class="alerta-contenido">
+    <p>${texto}</p>
+    <button onclick="cerrarAlerta()">Cerrar</button>
+    </div>
+    `;
+    
+    document.body.appendChild(alerta);
+    
+    }
+    
+    function cerrarAlerta(){
+    document.querySelector(".alerta-boda").remove();
+    }
