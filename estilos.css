@@ -1,490 +1,349 @@
 @font-face {
     font-family: "alianafont";
     src: url("fonts/Aliana-Regular.ttf") format("truetype");
-}
+    }
 
-body{
+    *{
+    box-sizing:border-box;
+    }
+    
+    body{
     margin:0;
     background:#2f3b33;
     display:flex;
-    flex-direction:column; /* esto hace que se acomoden verticalmente */
+    flex-direction:column;
     align-items:center;
-}
-
-.invitacion{
-    width:100%;
-    max-width:420px;
-    min-height:100vh;
-    background:#e9e4db;
-    text-align:center;
-    padding:40px 25px;
-    box-sizing:border-box;
-}
-
-/* IMAGEN */
-
-.imagen-principal{
-    width:90%;
-    max-width:340px;
-    aspect-ratio:1/1;
-    border-radius:50%;
-    object-fit:cover;
-    margin-bottom:30px;
-}
-
-/* TITULO */
-
-.titulo{
-    font-family: "EB Garamond", serif;
-    font-size:28px;
-    font-weight:600;
-    color:#5c7569;
+    }
     
-}
-
-/* NOMBRES */
-
-.nombres{
-    font-family:"alianafont";
-    font-size:70px;
-    color:#5c7569;
-    line-height:1.1;
-}
-
-/* & */
-
-.and{
-    font-family:"alianafont";
-    font-size:40px;
-    color:#5c7569;
-    margin:10px 0;
-}
-
-/* FECHA */
-
-.fecha{
-    margin-top:30px;
-    font-size:22px;
-    letter-spacing:3px;
-    color:#5c7569;
-}
-
-/* BOTON */
-
-.boton{
-    display:inline-block;
-    margin-top:25px;
-    padding:12px 30px;
-    border:2px solid #5c7569;
-    color:#5c7569;
-    text-decoration:none;
-    font-size:14px;
-    letter-spacing:2px;
-}
-
-.frase{
+    /* PORTADA */
+    
+    .invitacion{
     width:100%;
     max-width:420px;
-    margin:0 auto;
+    text-align:center;
+    padding:60px 20px;
+    
+    background-image:
+    linear-gradient(
+    to bottom,
+    rgba(245,242,236,0.85) 0%,
+    rgba(245,242,236,0.35) 50%,
+    rgba(245,242,236,0.9) 100%
+    ),
+    url("img/foto-pareja.jpg");
+    
+    background-size:cover;
+    background-position:center;
+    border:1px solid #d4c5a1;
+    }
+    
+    .titulo{
+    font-family:"EB Garamond", serif;
+    font-size:24px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    margin-bottom:20px;
+    color:#5c7569;
+    }
+    
+    /* NOMBRES */
+    
+    .nombres{
+    font-family:"alianafont";
+    font-size:75px;
+    color:#4a5f55;
+    line-height:1.2;
+    display:block;
+    }
+    
+    .and{
+    font-family:"alianafont";
+    font-size:60px;
+    color:#4a5f55;
+    margin:-10px 0;
+    display:block;
+    }
+    
+    /* FECHA */
+    
+    .fecha{
+    font-family:"EB Garamond", serif;
+    font-size:22px;
+    color:#5c7569;
+    margin:30px 0;
+    font-weight:500;
+    letter-spacing:2px;
+    line-height:1.4;
+    }
+    
+    /* BOTON */
+    
+    .boton{
+    display:inline-block;
+    background-color:#bfa370;
+    color:white;
+    font-family:"EB Garamond", serif;
+    text-decoration:none;
+    padding:12px 25px;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:2px;
+    border-radius:2px;
+    transition:all .3s ease;
+    margin-top:20px;
+    }
+    
+    .boton:hover{
+    background:#5c7569;
+    transform:translateY(-2px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    /* FRASE */
+    
+    .frase{
+    width:100%;
+    max-width:420px;
     background:#7c8c72;
     color:white;
     text-align:center;
     padding:80px 30px;
-    box-sizing:border-box;
-}
-
-.texto-frase{
+    }
+    
+    .texto-frase{
     font-family:"EB Garamond", serif;
     font-size:22px;
     line-height:1.8;
-}
-
-.corazon{
+    }
+    
+    .frase .corazon{
     margin-top:30px;
-    font-size:26px;
-}
-
-.padres{
+    font-size:30px;
+    }
+    
+    /* PADRES */
+    
+    .padres{
+    font-family: "Great Vibes", cursive;
     width:100%;
     max-width:420px;
-    margin:0 auto;
     background:#f3f3f3;
     padding:40px 20px;
-    box-sizing:border-box;
     color:#5c7569;
-}
+    }
 
-.padres-contenido{
-    border:2px solid #b89c6c;
+    .padres-contenido{
+    border:3px solid #b89c6c;
     padding:40px 25px;
     text-align:center;
-}
-
-.intro{
-    font-family:"EB Garamond", serif;
-    font-size:26px;
-    line-height:1.6;
-    margin-bottom:40px;
-}
-
-.grupo{
+    }
+    
+    .intro{
+        font-family: "Great Vibes", cursive;
+        font-size:36px;
+        line-height:1.5;
+        }
+    
+    .grupo{
     margin-bottom:35px;
-}
-
-.grupo h3{
-    font-family:"EB Garamond", serif;
-    font-size:24px;
-    margin-bottom:10px;
-}
-
-.grupo p{
+    }
+    
+    .grupo h3{
+        font-family: "Great Vibes", cursive;
+        font-size:34px;
+        font-weight:normal;
+        margin-top:30px;
+        margin-bottom:10px;
+        }
+    
+    .grupo p{
     font-family:"EB Garamond", serif;
     font-size:18px;
     margin:4px 0;
-}
-
-.final{
-    font-family:"EB Garamond", serif;
-    font-size:24px;
+    }
+    
+    .final{
+    font-family: "Great Vibes", cursive; 
+    font-size:34px;
     margin-top:30px;
-}
+    }
 
-/* SECCION CONTADOR */
-
-.contador{
+    .grupo h3,.intro,.final{
+    color:#4f6458; /* un poco más oscuro */
+    }
+    .grupo p{
+    color:#6e857a; /* más suave */
+    }
+    
+    /* CONTADOR */
+    
+    .contador{
     width:100%;
     max-width:420px;
-    margin:0 auto;
     background:#f2f2f2;
     text-align:center;
     padding:80px 20px;
-    box-sizing:border-box;
     position:relative;
     overflow:hidden;
     color:#5c7569;
-}
-
-/* TITULO */
-
-.contador h2{
-    font-family:"EB Garamond", serif;
+    }
+    
+    .contador h2{
+    font-family: "Imperial Script", cursive;
     font-size:40px;
     margin-bottom:30px;
-}
-
-/* CONTENEDOR DEL TIEMPO */
-
-.tiempo{
+    }
+    
+    .tiempo{
     display:flex;
     justify-content:center;
     gap:35px;
     margin:30px 0;
-}
-
-/* BLOQUE INDIVIDUAL */
-
-.tiempo div{
+    }
+    
+    .tiempo div{
     text-align:center;
-}
-
-/* NUMEROS */
-
-.tiempo span{
+    }
+    
+    .tiempo span{
     display:block;
     font-size:36px;
-    font-family:"EB Garamond", serif;
-}
-
-/* TEXTO DIAS HRS MIN SEG */
-
-.tiempo p{
+    font-family: "Imperial Script", cursive;
+    }
+    
+    .tiempo p{
     font-size:14px;
     letter-spacing:2px;
     margin-top:5px;
-}
-
-/* TEXTO FINAL */
-
-.contador h3{
-    font-family:"EB Garamond", serif;
+    }
+    
+    .contador h3{
+    font-family: "Imperial Script", cursive;
     font-size:32px;
     margin-top:20px;
-}
-
-
-.planta{
+    }
+    
+    /* PLANTAS */
+    
+    .planta{
     position:absolute;
     width:280px;
     pointer-events:none;
-}
-
-/* PLANTA ARRIBA DERECHA */
-
-.planta-arriba{
+    }
+    
+    .planta-arriba{
     top:0;
     right:0;
-}
-
-/* PLANTA ABAJO IZQUIERDA */
-
-.planta-abajo{
+    }
+    
+    .planta-abajo{
     bottom:0;
     left:0;
-}
-
-
-/* SECCION DONDE Y CUANDO */
-
-.lugar{
-    width:100%;
-    max-width:420px;
-    margin:0 auto;
-    padding:5px 25px 70px 25px; /* menos espacio arriba */
-    background:#f2f2f2;
-    text-align:center;
-    border-left:2px solid #c7a46c;
-    border-right:2px solid #c7a46c;
-    box-sizing:border-box;
-    color:#5c7569;
-}
-
-/* TITULO PRINCIPAL */
-
-.lugar h2{
-    font-family:"EB Garamond", serif;
-    font-size:44px;
-    margin-bottom:20px;
-}
-
-/* CONTENEDOR INTERNO */
-
-.lugar-contenido{
-    width:100%;
-    max-width:340px;
-    margin:0 auto;
-}
-
-/* IMAGEN */
-
-.lugar-img{
-    width:100%;
-    display:block;
-    margin:0 auto 45px auto;
-    border-radius:4px;
-}
-
-/* TITULO CEREMONIA */
-
-.lugar h3{
-    font-family:"EB Garamond", serif;
-    font-size:34px;
-    margin-bottom:12px;
-    line-height:1.2;
-}
-
-.lugar-nombre{
-    font-size:20px;
-    line-height:1.3;
-    margin-bottom:15px;
-}
-
-.lugar-hora{
-    font-size:20px;
-    margin-bottom:15px;
-    line-height:1.3;
-}
-
-.lugar-direccion{
-    font-size:18px;
-    line-height:1.3;
-}
-
-.boton-maps{
-    display:inline-block;
-    margin-top:0px;
-    padding:10px 26px;
-    border:1px solid #c7a46c;
-    border-radius:30px;
-    text-decoration:none;
-    font-family:"EB Garamond", serif;
-    font-size:18px;
-    color:#4f6458;
-    transition:0.3s;
     }
+    
+   
+    
+    .boton-maps{
+        display:inline-block;
+        margin-top:20px;
+        padding:10px 26px;
+        border:1px solid #c7a46c;
+        border-radius:30px;
+        text-decoration:none;
+        font-family:"EB Garamond", serif;
+        font-size:18px;
+        color:#4f6458;
+        transition:.3s;
+        } 
     
     .boton-maps:hover{
     background:#c7a46c;
     color:white;
     }
-
-
-.timeline{
-    max-width:420px;
-    margin:0 auto;
-    padding:80px 30px;
-    background:#f2f2f2;
-    position:relative;
-    text-align:center;
-    border-left:2px solid #c7a46c;
-    border-right:2px solid #c7a46c;
-    box-sizing:border-box;
-    color:#5c7569;
-    }
-
-/* TITULO */
-
-.timeline h2{
-    font-family:"EB Garamond", serif;
-    font-size:28px;
-    margin-bottom:80px;
-    line-height:1.4;
-    margin-top:0;
-    }
-
-/* LINEA VERTICAL */
-
-.timeline::before{
-    content:"";
-    position:absolute;
-    left:60px;
-    top:180px;
-    bottom:80px;
-    width:2px;
-    background:#6b7c6c;
-    }
-
-/* EVENTO */
-
-.evento{
-    display:flex;
-    align-items:center;
-    margin-bottom:100px;
-    }
-
-/* ICONO */
-
-.icono{
-    width:120px;
-    display:flex;
-    justify-content:center;
-    position:relative;
-    }
-
-/* CORAZON */
-
-.corazon{
-    width:46px;
-    height:46px;
-    background:#6b7c6c;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-    z-index:2;
-    }
-
-.corazon::after{
-    content:"♡";
-    color:white;
-    font-size:20px;
-    }
-
-/* CONTENIDO */
-
-.contenido{
-    flex:1;
-    text-align:left;
-    padding-left:10px;
-    }
-
-/* HORA */
-
-.hora{
-    font-size:16px;
-    letter-spacing:2px;
-    margin-bottom:8px;
-    }
-
-/* TITULO */
-
-.contenido h3{
-    font-family:"EB Garamond", serif;
-    font-size:30px;
-    margin-bottom:15px;
-    }
-
-/* ICONOS */
-
-.contenido img{
-    width:120px;
-    margin-top:10px;
-    }
-
-
+    
+    /* TIMELINE */
 
 .timeline{
+    width:100%;
     max-width:420px;
     margin:auto;
     padding:80px 40px;
     background:#f2f2f2;
     position:relative;
-    font-family:"EB Garamond", serif;
-    }
-    
-    /* TITULO */
-    
-    .timeline h2{
     text-align:center;
-    font-size:32px;
-    margin-bottom:80px;
-    line-height:1.4;
+    font-family:"EB Garamond", serif;
+    color:#5c7569;
+    
     }
     
-    /* LINEA VERTICAL */
+.timeline h2{
+    font-size:32px;
+    margin-top:0px;
+    margin-bottom:40px;
+    }
+    
+    /* LINEA CENTRAL */
     
     .timeline::before{
-        content:"";
-        position:absolute;
-        left:80px;
-        top:260px;   /* antes estaba más arriba */
-        bottom:80px;
-        width:2px;
-        background:#6b7c6c;
-        }
+    content:"";
+    position:absolute;
+    left:80px;
+    top:250px;
+    bottom:120px;
+    width:2px;
+    background:#6b7c6c;
+    height:0;
+    transition:height 2s ease-in-out;
+    z-index:1;
+    }
     
     /* EVENTOS */
     
     .evento{
-    display:flex;
-    align-items:flex-start;
-    margin-bottom:100px;
-    position:relative;
+        display:flex;
+        align-items:center;
+        margin-bottom:35px;
+        opacity:0;
+        transform:translateX(30px);
+        transition:all .8s ease-out;
+        position:relative;
+        }
+    
+
+    .evento.visible{
+    opacity:1;
+    transform:translateX(0);
     }
     
-    /* COLUMNA DEL ICONO */
+    /* COLUMNA ICONO */
     
     .icono{
-    width:80px;
-    display:flex;
-    justify-content:center;
-    position:relative;
-    }
+        width:80px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        position:relative;
+        }
     
     /* CORAZON */
     
-    .corazon{
-    width:42px;
-    height:42px;
-    background:#6b7c6c;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    z-index:2;
-    }
+    .timeline .corazon{
+        width:42px;
+        height:42px;
+        background:#6b7c6c;
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:absolute;
+        left:50%;
+        transform:translate(-50%, -45px); /* sube el corazón */
+        z-index:2;
+        }
     
-    .corazon::after{
+    /* ICONO CORAZON */
+    
+    .timeline .corazon::after{
     content:"♡";
     color:white;
     font-size:18px;
@@ -494,28 +353,319 @@ body{
     
     .contenido{
     flex:1;
-    padding-left:20px;
+    padding-left:25px;
+    text-align:left;
     }
-    
-    /* HORA */
     
     .hora{
-    font-size:14px;
-    letter-spacing:3px;
-    margin-bottom:10px;
-    }
+        font-size:20px;
+        letter-spacing:1px;
+        margin-bottom:2px;
+        } 
     
-    /* TITULO EVENTO */
-    
-    .contenido h3{
-    font-size:30px;
-    margin-bottom:15px;
-    line-height:1.2;
-    }
-    
-    /* ICONOS */
+        .contenido h3{
+            font-size:38px;
+            margin:0;
+            line-height:1.1;
+            } 
     
     .contenido img{
     width:120px;
-    margin-top:10px;
+    margin-top:5px;
     }
+    
+    /* ANIMACION LINEA */
+    
+    .timeline.animar-linea::before{
+    height:calc(100% - 350px);
+    }
+    .confirmacion {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        background: #fdfaf5; /* Fondo crema cálido */
+        text-align: center;
+    }
+    
+    .tarjeta {
+        border: 1px solid #c8a96a; /* Borde dorado fino */
+        padding: 40px 20px;
+        background: white;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra muy sutil */
+    }
+    
+    .titulo1{
+        font-family: "Great Vibes", cursive;  
+        font-size:48px;
+        color:#5f7468;
+        margin-bottom:10px;
+        }
+    
+    .familia {
+        font-family: "EB Garamond", serif;
+        font-size: 26px;
+        color: #5f7468; /* Verde oscuro de la portada */
+        margin-bottom: 30px;
+        font-weight: normal;
+    }
+
+    .lista{
+        font-family: "EB Garamond", serif;
+            max-width:260px;
+            margin:30px auto;   /* centra la lista */
+            display:flex;
+            flex-direction:column;
+            gap:12px;
+            font-size:18px;
+            color: #5f7468; 
+            }
+        
+    .btn-confirmar {
+        margin-top: 40px;
+        padding: 15px 40px;
+        background: #c8a96a; /* Dorado sólido */
+        color: white;
+        border: none;
+        font-family: "EB Garamond", serif;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 3px; /* Espaciado elegante */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 100%;
+        max-width: 250px;            
+            }
+            
+            .btn-confirmar:hover {
+                background: #b89555; /* Dorado más oscuro */
+                transform: translateY(-2px);
+                box-shadow: 0 5px 10px rgba(184, 149, 85, 0.3);
+            }        
+
+            .adultos{
+                background:#7c8c72;
+                padding:80px 20px;
+                display:flex;
+                justify-content:center;
+                color: white;
+                border-left:1px solid #c7a46c;
+                border-right:1px solid #c7a46c;
+                border-top: 1px solid #c7a46c;
+                
+              }
+              
+              .adultos-contenido{
+                max-width:380px;
+                width:100%;
+                text-align:center;
+                color: white;
+              }
+              
+              .adultos-card{
+                background:#ffffff;
+                padding:5px 35px;
+                margin-top:30px;
+                box-shadow:0 10px 25px rgba(0,0,0,0.15);
+                font-size:14px;
+                letter-spacing:2px;
+                line-height:1.7;
+                color: #4f6458;
+              }
+
+
+              .vestimenta-regalos{
+                background:#f1f1f1;
+                text-align:center;
+                padding:10px 20px;
+              }
+              
+              .titulo-seccion{
+                font-family:'Great Vibes', cursive;
+                font-size:48px;
+                color:#4f6458;
+                margin-bottom:10px;
+              }
+              
+              .formal{
+                letter-spacing:4px;
+                font-size:16px;
+                margin-bottom:40px;
+              }
+              
+              .iconos-vestimenta{
+                display:flex;
+                justify-content:center;
+                gap:40px;
+                margin-bottom:70px;
+              }
+              
+              .iconos-vestimenta img{
+                width:120px;
+              }
+              
+              .regalos-titulo{
+                margin-top:20px;
+              }
+              
+              .texto-regalos{
+                max-width:380px;
+                margin:auto;
+                font-size:16px;
+                line-height:1.7;
+                color:#555;
+              }
+
+              .regalos{
+                text-align:center;
+                padding:80px 20px;
+                }
+                
+                .botones-regalo{
+                display:flex;
+                justify-content:center;
+                gap:20px;
+                margin-top:30px;
+                flex-wrap:wrap;
+                }
+                
+                .btn-regalo{
+                padding:14px 28px;
+                text-decoration:none;
+                border-radius:4px;
+                font-size:14px;
+                letter-spacing:2px;
+                background:#222;
+                color:white;
+                }
+                
+                .btn-regalo:hover{
+                opacity:0.8;
+                }
+                .tiendas{
+                    display:flex;
+                    justify-content:center;
+                    gap:50px;
+                    margin-top:40px;
+                    flex-wrap:wrap;
+                    }
+                    
+                    .tienda{
+                    text-decoration:none;
+                    color:#333;
+                    text-align:center;
+                    }
+                    
+                    .tienda img{
+                    width:120px;
+                    margin-bottom:10px;
+                    transition:transform 0.3s;
+                    }
+                    
+                    .tienda img:hover{
+                    transform:scale(1.1);
+                    }
+
+/* SECCIÓN GRACIAS */
+
+.gracias{
+    position:relative;
+    background:#7c8c72;
+    text-align:center;
+    padding:120px 108px;
+    color:white;
+    }
+    
+    .mensaje-gracias{
+    animation:fadeUp 2s ease;
+    }
+    
+    .mensaje-gracias p{
+    font-family:'Great Vibes', cursive;
+    font-size:42px;
+    margin:10px 0;
+    color:white;
+    }
+    
+    .corazon{
+    display:block;
+    font-size:24px;
+    margin-top:40px;
+    }
+    
+    @keyframes fadeUp{
+    from{
+    opacity:0;
+    transform:translateY(30px);
+    }
+    to{
+    opacity:1;
+    transform:translateY(0);
+    }
+    }
+    
+
+/* GALERÍA */
+
+.momentos{
+    background:white;
+    padding:30px 20px;
+    text-align:center;
+    }
+    
+    .momentos h2{
+    color:#2f3f33;
+    margin-bottom:30px;
+    font-size:28px;
+    }
+    
+    .galeria{
+    max-width:380px;
+    margin:auto;
+    }
+    
+    .slider{
+    width:100%;
+    overflow:hidden;
+    border-radius:20px;
+    position:relative;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    .slides{
+    display:flex;
+    transition:transform 0.5s ease;
+    }
+    
+    .slides img{
+    width:100%;
+    flex-shrink:0;
+    display:block;
+    border-radius:20px;
+    }
+
+    /* BOTONES */
+    
+    .prev,
+    .next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(255,255,255,0.9);
+    border:none;
+    font-size:22px;
+    cursor:pointer;
+    padding:8px 12px;
+    border-radius:50%;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    z-index:10;
+    }
+    
+    .prev{
+    left:10px;
+    }
+    
+    .next{
+    right:10px;
+    }
+ 
