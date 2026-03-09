@@ -92,18 +92,13 @@
     font-size:22px;
     color:#5c7569;
     margin:30px 0;
-    margin-top:460px;  
+    margin-top:340px;  
     font-weight:500;
     letter-spacing:2px;
     line-height:1.4;
     
     }
-    
-    /* BOTON */
-    
-    
-    
-  
+
     
     /* FRASE */
     
@@ -113,17 +108,17 @@
     background:#7c8c72;
     color:white;
     text-align:center;
-    padding:1px 30px;
+    padding:10px 20px;
     }
     
     .texto-frase{
     font-family:"EB Garamond", serif;
     font-size:22px;
-    line-height:1.8;
+    line-height:1.4;
     }
     
     .frase .corazon{
-    margin-top:30px;
+    margin-top:10px;
     font-size:30px;
     }
     

@@ -99,7 +99,6 @@ america:[
 ]
 
 };
-
 // obtener invitados
 let invitados = familias[familiaID];
 
@@ -121,59 +120,60 @@ lista.appendChild(item);
 
 });
 
-// poner nombre de familia
-document.querySelector(".familia").innerText = "Familia " + familiaID;
-
 }else{
 
 document.querySelector(".lista").innerHTML = "Invitación no válida";
 
 }
 
-// función confirmar
 function confirmar(){
 
-let invitadosConfirmacion = [];
-
-document.querySelectorAll('.lista input[type="checkbox"]').forEach(c => {
-
-invitadosConfirmacion.push({
-nombre: c.value,
-asiste: c.checked ? "SI" : "NO"
-});
-
-});
-
-let familia = document.querySelector(".familia").innerText;
-
-fetch(url,{
-method:"POST",
-body: new URLSearchParams({
-familia: familia,
-invitados: JSON.stringify(invitadosConfirmacion)
-})
-})
-.then(res => res.text())
-.then(() => alert("Confirmación enviada"))
-.catch(() => alert("Error al enviar"));
-
-}
-
+    let invitadosConfirmacion = [];
+    
+    document.querySelectorAll('.lista input[type="checkbox"]').forEach(c => {
+    
+    invitadosConfirmacion.push({
+    nombre: c.value,
+    asiste: c.checked ? "SI" : "NO"
+    });
+    
+    });
+    
+    let familia = familiaID;
+    
+    fetch(url,{
+    method:"POST",
+    body: new URLSearchParams({
+    familia: familia,
+    invitados: JSON.stringify(invitadosConfirmacion)
+    })
+    })
+    .then(res => res.text())
+    .then(() => alert("Confirmación enviada"))
+    .catch(() => alert("Error al enviar"));
+    
+    }
 
 const musica = document.getElementById("musica");
 const btnMusica = document.getElementById("btnMusica");
 
-let reproduciendo = false;
+function iniciarMusica(){
 
-// iniciar música al primer toque
-document.addEventListener("click", () => {
-    if(!reproduciendo){
-        musica.play();
-        reproduciendo = true;
-    }
-}, { once:true });
+if(musica && musica.paused){
+musica.play();
+}
+
+}
+
+// iniciar con click
+document.addEventListener("click", iniciarMusica, { once:true });
+
+// iniciar con scroll
+window.addEventListener("scroll", iniciarMusica, { once:true });
 
 // botón encender / apagar
+if(btnMusica){
+
 btnMusica.addEventListener("click", () => {
 
 if(musica.paused){
@@ -185,3 +185,5 @@ if(musica.paused){
 }
 
 });
+
+}
