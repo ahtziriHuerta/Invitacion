@@ -6,6 +6,15 @@ function scrollInvitacion(){
     });
 }
 
+const musica = document.getElementById("musica");
+
+window.addEventListener("load", () => {
+    musica.muted = false;
+    musica.play().catch(() => {
+        console.log("El navegador bloqueó el autoplay");
+    });
+});
+
 let index = 0;
 const slides = document.querySelector(".slides");
 const total = document.querySelectorAll(".slides img").length;
@@ -21,6 +30,7 @@ index--;
 if(index < 0){ index = total - 1; }
 slides.style.transform = `translateX(-${index * 100}%)`;
 }
+
 
 const fechaBoda = new Date("Oct 30, 2026 00:00:00").getTime();
 
