@@ -45,24 +45,46 @@
     color:#5c7569;
     }
     
-    /* NOMBRES */
-    
-    .nombres{
-        font-family:"alianafont";
-        font-size:90px;
-        color:#4a5f55;
-        line-height:1.2;
-        display:block;
-        margin:52px 0;
-        }
-    
-    .and{
-        font-family:"alianafont";
-        font-size:80px;
-        color:#4a5f55;
-        margin:5px 0;
-        display:block;
-        }
+/* PRIMER NOMBRE */
+
+/* PRIMER NOMBRE */
+
+/* PRIMER NOMBRE */
+
+/* PRIMER NOMBRE */
+.nombres {
+    font-family: "alianafont", cursive; /* Añadí un fallback genérico */
+    font-size: 70px;
+    color: #4a5f55;
+    display: block;
+    line-height: 1;
+    margin-top: 40px; /* Reducido para que no quede tan abajo */
+    margin-bottom: -10px; /* Ajustado para que el '&' no lo tape */
+    text-align: center;
+  }
+  
+  /* SÍMBOLO & */
+  .and {
+    font-family: "alianafont", cursive;
+    font-size: 50px;
+    color: #4a5f55;
+    display: block;
+    line-height: 2;
+    margin-bottom: -5px; /* Ajustado para acercar a Juan */
+    text-align: center;
+  }
+  
+  /* SEGUNDO NOMBRE */
+  .nombres1 {
+    font-family: "alianafont", cursive;
+    font-size: 70px;
+    color: #4a5f55;
+    display: block;
+    line-height: 0.2;
+    margin-top: 0;
+    text-align: center;
+  }
+
     /* FECHA */
     
     .fecha{
@@ -70,7 +92,7 @@
     font-size:22px;
     color:#5c7569;
     margin:30px 0;
-    margin-top:65px;  
+    margin-top:460px;  
     font-weight:500;
     letter-spacing:2px;
     line-height:1.4;
