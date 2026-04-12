@@ -163,3 +163,26 @@ body {
     background-color: #dcdcdc;
     overflow-x: hidden;
 }
+
+.envelope {
+    width: 90%;
+    max-width: 380px;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+
+    .envelope {
+      width: 95%;
+    }
+  
+    .slider {
+      width: 100%;
+      height: 400px; /* más pequeño en celular */
+    }
+  
+    .slide img {
+      object-fit: cover;
+    }
+  
+  }

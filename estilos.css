@@ -917,3 +917,8 @@ section {
   padding: 0;
 }
 
+.envelope {
+  width: 90%;
+  max-width: 380px;
+  height: auto;
+}
