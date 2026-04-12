@@ -917,8 +917,31 @@ section {
   padding: 0;
 }
 
-.envelope {
-  width: 90%;
-  max-width: 380px;
-  height: auto;
+.corazon {
+  animation: latido 1.5s infinite;
+}
+
+@keyframes latido {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.tiempo span {
+  animation: aparecer 1s ease;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.qr {
+  animation: latidoQR 2s infinite;
+}
+
+@keyframes latidoQR {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
