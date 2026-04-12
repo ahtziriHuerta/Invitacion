@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Imperial+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestra Boda</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<audio id="musica" loop>
+	<source src="audio/musica.mp3" type="audio/mpeg">
+  </audio>
+  <button id="btnMusica" class="btn-musica">🔊</button>
+<body>
+
+<div class="invitacion">
+<h2 class="titulo">Nuestra Boda</h2>
+
+<div class="contenedor-nombres">
+	<span class="nombres">Ahtziri</span>
+	<span class="and">&</span>
+	<span class="nombres1">Juan</span>
+  </div>
+
+<div class="fecha">
+VIERNES 30 <br>
+OCTUBRE 2026
+</div>
+  
+</div>	
+
+
+<section class="frase">
+
+<p class="texto-frase">
+A veces lo que empieza como una <br>
+locura se convierte en lo mejor de <br>
+tu vida
+</p>
+<div class="corazon">♥</div>
+
+</section>
+
+
+<section class="padres">
+
+<div class="padres-contenido">
+
+<p class="intro">
+Con la bendición de Dios<br>
+y en compañía de nuestros<br>
+padres
+</p>
+
+<div class="grupo">
+<h3>Padres de la novia</h3>
+<p>Sr. Julio Huerta Carillo</p>
+<p>Sra. Ludivina Deniz Garcia</p>
+</div>
+
+<div class="grupo">
+<h3>Padres del novio</h3>
+<p>Sr. Luis Antonio Ordaz Ramirez</p>
+<p>Sra. Nora Susana Villarreal Ramos</p>
+</div>
+
+<p class="final">
+Nos complace invitarte a<br>
+ser parte de este gran día.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="contador">
+
+<img src="img/plantita1.png" class="planta planta-arriba" alt="">
+<img src="img/plantita2.png" class="planta planta-abajo" alt="">
+
+<div class="contador-contenido">
+
+<h2>Faltan</h2>
+
+<div class="tiempo">
+
+<div>
+<span id="dias">0</span>
+<p>DÍAS</p>
+</div>
+
+<div>
+<span id="horas">0</span>
+<p>HRS</p>
+</div>
+
+<div>
+<span id="minutos">0</span>
+<p>MIN</p>
+</div>
+
+<div>
+<span id="segundos">0</span>
+<p>SEG</p>
+</div>
+
+</div>
+
+<h3>para nuestra boda</h3>
+
+</div>
+</section>
+
+<section class="timeline">
+
+	<h2 class="compartir">
+		Te compartimos los detalles<br>de la celebración
+		</h2>
+
+<div class="evento">
+<div class="icono">
+<div class="corazon"></div>
+</div>
+
+<div class="contenido">
+<p class="hora">17:30 HRS</p>
+<h3>Ceremonia<br>Religiosa</h3>
+<img src="img/iglesia1.png" alt="">
+<a href="https://www.google.com/maps/search/?api=1&query=Cobalto+Eventos+Antonio+Bravo+69+Tlaquepaque"
+target="_blank"
+rel="noopener noreferrer"
+class="boton-maps">
+Ver ubicación
+</a>
+</div>
+</div>
+
+<div class="evento">
+<div class="icono">
+<div class="corazon"></div>
+</div>
+
+<div class="contenido">
+<p class="hora">19:30 HRS</p>
+<h3>Cocktail y Civil</h3>
+<img src="img/copas.png" alt="">
+</div>
+</div>
+
+<div class="evento">
+<div class="icono">
+<div class="corazon"></div>
+</div>
+
+<div class="contenido">
+<p class="hora">21:00 HRS</p>
+<h3>Cena</h3>
+<img src="img/cena.png" alt="">
+</div>
+</div>
+
+<div class="evento">
+<div class="icono">
+<div class="corazon"></div>
+</div>
+
+<div class="contenido">
+<p class="hora">22:00 HRS</p>
+<h3>A bailar</h3>
+<img src="img/musica.png" alt="">
+</div>
+</div>
+
+</section>
+
+
+
+<section class="confirmacion">
+	<div class="tarjeta">
+	
+	<h3 class="titulo1">Confirmar Asistencia</h3>
+	<p class="subtitulo">¿Contamos contigo?</p>
+	<p class="texto">
+		Queremos que seas testigo de nuestro amor acompañándonos en este día tan especial.
+	  </p>
+	<div class="lista"></div>	
+	<button onclick="confirmar()" class="btn-confirmar">
+	CONFIRMAR
+	</button>
+	<p class="texto">
+		Amamos a los niños, pero en esta ocasión hemos decidido celebrar solo con adultos. ¡Gracias por comprender!”
+	  </p>	
+	</div>	
+	</section>
+
+
+
+  <section class="vestimenta-regalos">
+
+	<h2 class="titulo-seccion">Código de vestimenta</h2>
+  
+	<p class="formal">FORMAL</p>
+  
+	<div class="iconos-vestimenta">
+	  <img src="img/vestido.png" alt="Vestido formal">
+	  <img src="img/traje.png" alt="Traje formal">
+	</div>
+	<p class="texto-vestimenta">
+		El blanco está reservado para la novia,
+		¡nos encantará verte en otros colores!
+	</p>
+
+  
+	<h2 class="titulo-seccion regalos-titulo">Regalos</h2>
+	<p></p>
+	<p class="texto-regalos">
+	  El regalo es opcional, la asistencia obligatoria pero si quieres tener
+	  un detalle con nosotros te damos algunas ideas.
+	</p>
+
+	
+
+	<div class="tiendas">
+
+		<a href="LINK_AMAZON" target="_blank" class="tienda">
+		<img src="img/amazon.png" alt="Amazon">
+		</a>
+		
+		<a href="LINK_LIVERPOOL" target="_blank" class="tienda">
+		<img src="img/fabrica.png" alt="Liverpool">
+		</a>
+		</div>
+  
+  </section>
+
+  <section class="slider-section">
+	<div class="slider">
+	  
+	  <div class="slides">
+		<img src="img/foto1.jpg" class="slide active" alt="Slide 1 - Wedding photo">
+		<img src="img/foto2.jpg" class="slide" alt="Slide 2 - Wedding photo">
+		<img src="img/foto3.jpg" class="slide" alt="Slide 3 - Wedding photo">
+	  </div>
+  
+	  <!-- Flechas -->
+	  <button class="prev">&#10094;</button>
+	  <button class="next">&#10095;</button>
+  
+	  <!-- Indicadores -->
+	  <div class="dots">
+		<span class="dot active"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+  </div>
+  
+	</div>
+  </section>
+
+	<section class="album">
+		<div class="album-card">
+	  
+		  <h2 class="titulo">Álbum de fotos</h2>
+	  
+		  <p class="subtitulo">¡Ayúdanos a inmortalizar cada momento!</p>
+		  <img src="img/tid.png" class="icono" alt="Cámara para álbum de fotos">
+		  <p class="texto">
+			Escanea este QR o haz clic en él y comparte las fotos que tomes durante la boda.
+			¡Nos hará muchísima ilusión verlas!
+		  </p>
+		  <a href="https://drive.google.com/drive/folders/1iW4e1dOn050q_MU4-HPwcomqMFzXnUAE?usp=sharing" target="_blank" rel="noopener">
+			<img src="img/QR.png" class="qr" alt="QR code for sharing photos">
+		  </a>
+	  
+		</div>
+	  </section>
+
+		<section class="gracias">
+			<div class="mensaje-gracias">
+			<p>Gracias por</p>
+			<p>acompañarnos en</p>
+			<p>este día tan</p>
+			<p>especial para</p>
+			<p>nosotros</p>
+			
+			<span class="corazon">❤</span>
+			</div>
+			</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

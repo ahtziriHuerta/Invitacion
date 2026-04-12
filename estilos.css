@@ -6,7 +6,24 @@
     *{
     box-sizing:border-box;
     }
-    
+    /* 1. Forzamos el fondo al gris del sobre para que el cambio sea invisible */
+body {
+  background-color: #dcdcdc !important; 
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Hacemos que la invitación (donde está el verde) aparezca suavemente */
+.invitacion {
+  opacity: 0;
+  animation: aparecer 0.8s ease-out forwards;
+  background-color: #ffffff; /* O el color de fondo de tu tarjeta */
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
     body{
     margin:0;
     background:#2f3b33;
@@ -14,7 +31,11 @@
     flex-direction:column;
     align-items:center;
     }
-    
+    body {
+      animation: fadeInPage 1s ease-in-out;
+  }
+  
+  
     /* PORTADA */
     
     .invitacion{
@@ -42,20 +63,15 @@
     text-transform:uppercase;
     letter-spacing:4px;
     margin-bottom: 2px;
-    color:#5c7569;
+    color:#4a5f55;
     }
-    
-/* PRIMER NOMBRE */
-
-/* PRIMER NOMBRE */
-
-/* PRIMER NOMBRE */
+  
 
 /* PRIMER NOMBRE */
 .nombres {
     font-family: "alianafont", cursive; /* Añadí un fallback genérico */
     font-size: 70px;
-    color: #4a5f55;
+    color: #5c7569;
     display: block;
     line-height: 1;
     margin-top: 40px; /* Reducido para que no quede tan abajo */
@@ -78,7 +94,7 @@
   .nombres1 {
     font-family: "alianafont", cursive;
     font-size: 70px;
-    color: #4a5f55;
+    color: #5c7569;
     display: block;
     line-height: 0.2;
     margin-top: 0;
@@ -105,7 +121,7 @@
     .frase{
     width:100%;
     max-width:420px;
-    background:#7c8c72;
+    background:#5c7569;
     color:white;
     text-align:center;
     padding:10px 20px;
@@ -173,7 +189,7 @@
     color:#4f6458; /* un poco más oscuro */
     }
     .grupo p{
-    color:#6e857a; /* más suave */
+    color: #b89c6c; /* más suave */
     }
     
     /* CONTADOR */
@@ -269,7 +285,7 @@
     max-width:420px;
     margin:auto;
     padding:80px 40px;
-    background:#f2f2f2;
+    background:#fdfaf5;
     position:relative;
     text-align:center;
     font-family:"EB Garamond", serif;
@@ -385,7 +401,7 @@
         max-width: 420px;
         margin: 0 auto;
         padding: 60px 20px;
-        background: #fdfaf5; /* Fondo crema cálido */
+        background:#5c7569; /* Fondo crema cálido */
         text-align: center;
     }
     
@@ -399,7 +415,7 @@
     .titulo1{
         font-family: "Great Vibes", cursive;  
         font-size:48px;
-        color:#5f7468;
+        color:#5c7569;
         margin-bottom:10px;
         }
     
@@ -489,9 +505,11 @@
               }
               
               .formal{
-                letter-spacing:4px;
-                font-size:16px;
-                margin-bottom:40px;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+                font-size: 18px;
+                color: #000;
+                margin-top: 10px; 
               }
               
               .iconos-vestimenta{
@@ -516,6 +534,14 @@
                 line-height:1.7;
                 color:#555;
               }
+              .texto-vestimenta{
+                max-width:380px;
+                margin:auto;
+                font-size:16px;
+                line-height:1.7;
+                color:#555;
+              }
+
 
               .regalos{
                 text-align:center;
@@ -571,10 +597,10 @@
 
 .gracias{
     position:relative;
-    background:#7c8c72;
+    background:hsl(0, 0%, 100%);
     text-align:center;
     padding:120px 108px;
-    color:white;
+    color:#f2f2f2;
     }
     
     .mensaje-gracias{
@@ -585,7 +611,7 @@
     font-family:'Great Vibes', cursive;
     font-size:42px;
     margin:10px 0;
-    color:white;
+    color: #7c8c72;
     }
     
     .corazon{
@@ -604,46 +630,7 @@
     transform:translateY(0);
     }
     }
-    
 
-/* GALERÍA */
-
-.momentos{
-    background:white;
-    padding:30px 20px;
-    text-align:center;
-    }
-    
-    .momentos h2{
-    color:#2f3f33;
-    margin-bottom:30px;
-    font-size:28px;
-    }
-    
-    .galeria{
-    max-width:380px;
-    margin:auto;
-    }
-    
-    .slider{
-    width:100%;
-    overflow:hidden;
-    border-radius:20px;
-    position:relative;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
-    }
-    
-    .slides{
-    display:flex;
-    transition:transform 0.5s ease;
-    }
-    
-    .slides img{
-    width:100%;
-    flex-shrink:0;
-    display:block;
-    border-radius:20px;
-    }
 
     /* BOTONES */
     
@@ -724,3 +711,209 @@
             border-radius:6px;
             cursor:pointer;
             }
+/* album de fotos  */
+
+/* fondo oscuro alrededor */
+.album {
+  background:#5c7569;
+  padding: 50px 0;
+}
+
+/* TARJETA CENTRADA */
+.album-card {
+  background: #eae3d8;
+  width: 90%;
+  max-width: 420px; /* 👈 ESTO hace que no sea gigante */
+  margin: auto;
+  padding: 60px 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* texto */
+.titulo {
+  
+  font-size: 45px; /* 👈 bajamos tamaño */
+  color: #4a5f55;
+  margin-bottom: 15px;
+}
+
+.subtitulo {
+  color: #6b3e2e;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.icono {
+  width: 60px;
+  display: block;      /* 👈 clave */
+  margin: 0 auto 25px; /* 👈 centra horizontal */
+}
+
+.texto {
+  color: #7c8b6d;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.qr {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.codigo-titulo {
+  color: #6b3e2e;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.codigo-box {
+  background: #8fa184;
+  padding: 12px;
+  color: white;
+  border-radius: 6px;
+  letter-spacing: 2px;
+}
+
+
+
+.carousel {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+/* imágenes */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+}
+
+/* imagen activa */
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* BOTONES */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 22px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+  background: white;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+
+/*scrooll de fotos  */
+.slider-section {
+  display: flex;
+  justify-content: center;
+  background: #e5e5e5;
+  padding: 0; /* 🔥 QUITA el espacio */
+}
+
+
+.slider {
+  position: relative;
+  width: 420px;
+  height: 600px;
+  overflow: hidden;
+  
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute; /* 🔥 clave */
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Flechas */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Puntitos */
+.dots {
+  position: absolute;
+  bottom: 15px; /* los sube dentro de la imagen */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 5px;
+  background-color:#8fa184;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #cfe3c2;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+

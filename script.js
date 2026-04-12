@@ -1,26 +1,3 @@
-function scrollInvitacion(){
-
-    window.scrollTo({
-    top: window.innerHeight,
-    behavior: "smooth"
-    });
-}
-
-let index = 0;
-const slides = document.querySelector(".slides");
-const total = document.querySelectorAll(".slides img").length;
-
-document.querySelector(".next").onclick = () =>{
-index++;
-if(index >= total){ index = 0; }
-slides.style.transform = `translateX(-${index * 100}%)`;
-}
-
-document.querySelector(".prev").onclick = () =>{
-index--;
-if(index < 0){ index = total - 1; }
-slides.style.transform = `translateX(-${index * 100}%)`;
-}
 
 
 const fechaBoda = new Date("Oct 30, 2026 00:00:00").getTime();
@@ -83,17 +60,305 @@ const familiaID = params.get("familia");
 // base de familias
 const familias = {
 
-maldonado:[
-"Sara Maldonado Garza",
-"Felipe Ruiz Garza",
-"Laura Ruiz Garza",
-"Carlos Ruiz Garza"
-],
+    america:[
+        "America Huerta",
+        "Oscar Chavez"
+        ],
+        
+        julio:[
+        "Julio Huerta",
+        "Omar Meda"
+        ],
+        
+        karime:[
+        "Karime Portocarrero",
+        "Ivan Padilla"
+        ],
+        
+        eli:[
+        "Elizabeth Izquierdo"
+        ],
+        
+        karen:[
+        "Karen y Aldo"
+        ],
+        
+        perla:[
+        "Perla Santiago"
+        ],
+        
+        dani:[
+        "Daniela coyazo"
+        ],
+        
+        fer:[
+        "Fernanda Lomeli"
+        ],
+        
+        luz:[
+        "Luz Rojas",
+        "Tomas Garcia"
+        ],
+        
+        alejandra:[
+        "Alejandra Garcia"
+        ],
+        
+        dulce:[
+        "Dulce Madriz"
+        ],
+        
+        netobarra:[
+        "Ernesto Torres"
+        ],
+        
+        netomkt:[
+        "Ernesto Hegewisch",
+        "Gaby"
+        ],
+        
+        ricardo:[
+        "Ricardo Buenrostro",
+        "Diana Segovia"
+        ],
+        
+        
+        
+        emma:[
+        "Emma Huerta",
+        "Alberto Lopez"
+        ],
+        
+        marai:[
+        "Marai Lopez",
+        "Abel Martinez"
+        ],
+        
+        jacob:[
+        "Jacob Lopez",
+        "Zitlalli Naranjo"
+        ],
+        
+        isaias:[
+        "Isaias Lopez",
+        "Fernanda Meza"
+        ],
+        
+        victor:[
+        "Victor Huerta",
+        "Johana Ramos",
+        "Karen Huerta"
+        ],
+        
+        natali:[
+        "Natali Huerta",
+        "Ricardo"
+        ],
+        
+        titur:[
+        "Victor Huerta",
+        "Karina"
+        ],
+        
+        rosa:[
+        "Rosa Huerta",
+        "Gustavo Aguilar"
+        ],
+        
+        daniela:[
+        "Daniela Aguilar",
+        "Baruch Medina"
+        ],
+        
+        gustavo:[
+        "Gustavo Aguilar",
+        "Vicky Mercado"
+        ],
+        
+        martha:[
+        "Martha Aguilar",
+        "Miguel Nieto"
+        ],
+        
+        alondra:[
+        "Alondra Aguilar",
+        "Jonathan Garcia"
+        ],
+        
+        santos:[
+        "Santos Huerta",
+        "Susana Contreras"
+        ],
+        
+        
+        
+        elvira:[
+        "Elvira Deniz",
+        "Aurelio Medina"
+        ],
+        
+        juanito:[
+        "Juan Median",
+        "Juan Median +1"
+        ],
+        
+        vero:[
+        "Veronica Medina",
+        "Victor Lomeli"
+        ],
+        
+        vicky:[
+        "Vicky Medina"
+        ],
+        
+        jova:[
+        "Jova Medina"
+        ],
+        
+        yani:[
+        "Jeanethe Medina",
+        "Julio Rubio"
+        ],
+        
+        fabiola:[
+        "Fabiola Medina",
+        "Fabiola Medina"
+        ],
+        
+        livier:[
+        "Livier Deniz",
+        "Jesus Sanchez"
+        ],
+        
+        yessy:[
+        "Monica Sanchez",
+        "Carlos Michel"
+        ],
+        
+        lili:[
+        "Liliana Sanchez",
+        "Julio Palomar"
+        ],
+        
+        saul:[
+        "Saul Sanchez",
+        "Saul Sanchez +1"
+        ],
+        
+        cuijo:[
+        "David Sanchez",
+        "Alejandra Palomar"
+        ],
+        
+        pera:[
+        "Esperanza Deniz",
+        "Juan Zamora"
+        ],
+        
+        karina:[
+        "Karina Zamora",
+        "Karina Zamora +1"
+        ],
+        
+        claudia:[
+        "Claudia Zamora"
+        ],
+        
+        
+        
+        gaby:[
+        "Grabriel Deniz",
+        "Guadalupe",
+        "Silvestre Deniz"
+        ],
+        
+        les:[
+        "Leslie Deniz",
+        "Anderson"
+        ],
+        
+        jose:[
+        "Jose Deniz",
+        "Jose Deniz +1"
+        ],
+        
+        chu:[],
+        
+        ericka:[
+        "Ericka Deniz"
+        ],
+        
+        vicenta:[
+        "Vicenta Deniz"
+        ],
+        
+        tia_luz:[
+        "Luz"
+        ],
+        
+        bety:[
+        "Claudia Deniz",
+        "Fidencio Granados"
+        ],
+        
+        benja:[
+        "Benjamin Deniz",
+        "Yolanda guzman",
+        "Benjamin Jr"
+        ],
+        
+        lis:[
+        "Lisbeth Deniz",
+        "Lisbeth Deniz +1"
+        ],
+        
+        kari:[
+        "Karina Castaneda",
+        "Jose Santiago",
+        "Carmen Campos"
+        ],
+        
+        
+        
+        paola:[
+        "Paola Garcia"
+        ],
+        
+        ayala:[
+        "Luis Ayala",
+        "Luis Ayala +1"
+        ],
+        
+        rebeca:[
+        "Rebeca Colin"
+        ],
+        
+        axel:[
+        "Axel Ordonez",
+        "Axel Ordonez +1"
+        ],
+        
+        jorge:[
+        "Jorge nunez"
+        ],
+        
+        richi:[
+        "Ricardo Marquez"
+        ],
+        
+        grecia:[
+        "Grecia De Alba"
+        ],
+        
+        luis:[
+        "Luis Hernandez",
+        "Jesus Gutierrez"
+        ],
 
-america:[
-"América Huerta",
-"Oscar De Alba"
-]
+        magda:[
+            "Magda Flores",
+            "Magda Flores + 1"
+        ]
 
 };
 // obtener invitados
@@ -204,3 +469,33 @@ function mostrarMensaje(texto){
     function cerrarAlerta(){
     document.querySelector(".alerta-boda").remove();
     }
+
+
+    let index = 0;
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+    
+    function showSlide(i) {
+      slides.forEach(slide => slide.classList.remove("active"));
+      dots.forEach(dot => dot.classList.remove("active"));
+    
+      slides[i].classList.add("active");
+      dots[i].classList.add("active");
+    }
+    
+    document.querySelector(".next").addEventListener("click", () => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    });
+    
+    document.querySelector(".prev").addEventListener("click", () => {
+      index = (index - 1 + slides.length) % slides.length;
+      showSlide(index);
+    });
+    
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        index = i;
+        showSlide(index);
+      });
+    });

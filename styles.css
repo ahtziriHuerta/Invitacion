@@ -1,0 +1,165 @@
+/* --- FONDO --- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dcdcdc; /* Asegúrate de que este gris sea igual al del index1 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nombres {
+    position: absolute;
+    top: 20px; left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; color: #5c7569;
+    z-index: 5;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 20px; left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 14px; color: #5c7569;
+    z-index: 5;
+}
+
+/* --- CONTENEDOR --- */
+.invitation-wrapper {
+    position: relative;
+    width: 450px;
+    height: 950px;
+    background: #ffffff;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+    overflow: hidden;
+    cursor: pointer;
+    /* Evita el cuadro blanco al final */
+    border: none;
+    outline: none;
+}
+
+/* --- SOLAPAS (LA X PERFECTA) --- */
+.flap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 1.0s;
+}
+
+.top { 
+    clip-path: polygon(0 0, 100% 0, 50% 55%); 
+    z-index: 4; 
+}
+
+.bottom { 
+    clip-path: polygon(0 100%, 100% 100%, 50% 55%); 
+    z-index: 3; 
+}
+
+.left { 
+    clip-path: polygon(0 20%, 50% 55%, 0 80%); 
+    background: #5c7569; 
+    z-index: 2; 
+}
+
+.right { 
+    clip-path: polygon(100% 20%, 50% 55%, 100% 80%); 
+    background: #5c7569; 
+    z-index: 2; 
+}
+
+/* --- SELLO --- */
+.seal {
+    position: absolute;
+    top: 55%; left: 50%;
+    width: 80px; height: 80px;
+    background: radial-gradient(circle at 35% 35%, #e6c98f, #b8965a);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transition: all 0.7s ease;
+}
+
+.seal-inner {
+    width: 70%; height: 70%;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0.3);
+    font-size: 20px;
+    display: flex; align-items: center; justify-content: center;
+}
+
+/* --- TEXTOS --- */
+.top-text {
+    position: absolute;
+    top: 70px; width: 100%;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px; color: #7c8f6a;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 60px; width: 100%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px; color: #444;
+}
+
+/* --- ANIMACIÓN DE APERTURA --- */
+.is-open .top    { transform: translate(-120%, -120%); opacity: 0; }
+.is-open .bottom { transform: translate(120%, 120%); opacity: 0; }
+.is-open .left   { transform: translate(-120%, 120%); opacity: 0; }
+.is-open .right  { transform: translate(120%, -120%); opacity: 0; }
+.is-open .seal   { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+.is-open .top-text, .is-open .bottom-text { opacity: 0; }
+
+
+/* Contenedor padre para centrar todo */
+.main-wrapper {
+    position: relative;
+    width: 380px;
+    height: 750px; /* Ajusta según el largo de tu invitación */
+    margin: 0 auto;
+}
+
+/* El sobre debe estar al frente */
+.envelope-wrapper {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 700px;
+    z-index: 10; /* Al frente */
+    transition: opacity 0.8s ease;
+    background: white;
+}
+
+/* La invitación debe estar detrás y tener scroll si es larga */
+.invitation-content {
+    position: relative;
+    z-index: 1; /* Detrás */
+    display: none; /* Se activa con JS */
+    opacity: 0;
+    animation: fadeInInvitation 1.5s forwards;
+    padding-top: 20px;
+}
+
+@keyframes fadeInInvitation {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* IMPORTANTE: Asegúrate de que el body no tenga scroll 
+   mientras el sobre está cerrado */
+body {
+    background-color: #dcdcdc;
+    overflow-x: hidden;
+}
