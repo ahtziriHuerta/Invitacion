@@ -31,23 +31,30 @@
 
     <script>
         function openAndRedirect() {
-            
+        
             const container = document.getElementById('mainContainer');
-            
-            // 1. Inicia la animación de las solapas
+        
+            // Obtener parámetro familia
+            const params = new URLSearchParams(window.location.search);
+            const familiaID = params.get("familia");
+        
+            // Animación
             container.classList.add('is-open');
-
-            // 2. Después de 1.2s (cuando la X ya se abrió), hacemos un fade out del sobre
+        
             setTimeout(() => {
                 container.style.transition = "opacity 0.1s ease";
                 container.style.opacity = "0";
             }, 2200);
-
-            // 3. Finalmente redirigimos a los 1.6s
+        
+            // Redirección CON parámetro
             setTimeout(() => {
-                window.location.href = "index1.html"
-            }, 650); 
+                if (familiaID) {
+                    window.location.href = "index1.html?familia=" + familiaID;
+                } else {
+                    window.location.href = "index1.html";
+                }
+            }, 650);
         }
-    </script>
+        </script>
 </body>
 </html>
