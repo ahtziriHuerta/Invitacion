@@ -74,13 +74,17 @@ const familias = {
         "Karime Portocarrero",
         "Ivan Padilla"
         ],
+
+        nora:[
+        "Nora Lomeli"
+        ],
         
         eli:[
         "Elizabeth Izquierdo"
         ],
         
         karen:[
-        "Karen y Aldo"
+        "Karen"
         ],
         
         perla:[
@@ -108,11 +112,11 @@ const familias = {
         "Dulce Madriz"
         ],
         
-        netobarra:[
+        netotorre:[
         "Ernesto Torres"
         ],
         
-        netomkt:[
+        netoheg:[
         "Ernesto Hegewisch",
         "Gaby"
         ],
@@ -120,6 +124,10 @@ const familias = {
         ricardo:[
         "Ricardo Buenrostro",
         "Diana Segovia"
+        ],
+
+        ricardoMa:[
+        "Ricardo Marquez"
         ],
         
         
@@ -187,7 +195,9 @@ const familias = {
         
         santos:[
         "Santos Huerta",
-        "Susana Contreras"
+        "Susana Contreras",
+        "Alexandra Huerta",
+        "Novio Alexa" 	
         ],
         
         
@@ -222,7 +232,7 @@ const familias = {
         
         fabiola:[
         "Fabiola Medina",
-        "Fabiola Medina"
+        "Eddy"
         ],
         
         livier:[
@@ -282,7 +292,10 @@ const familias = {
         "Jose Deniz +1"
         ],
         
-        chu:[],
+        chu:[
+            "Valeria",
+            "Hermana"
+        ],
         
         ericka:[
         "Ericka Deniz"
@@ -358,7 +371,13 @@ const familias = {
         magda:[
             "Magda Flores",
             "Magda Flores + 1"
-        ]
+        ],
+        
+
+        Al1:[
+                "Alejandra ",	
+                ]
+        
 
 };
 // obtener invitados
