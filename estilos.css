@@ -57,27 +57,28 @@ body {
     border:1px solid #d4c5a1;
     }
     
-    .titulo{
-    font-family:"EB Garamond", serif;
-    font-size:30px;
-    text-transform:uppercase;
-    letter-spacing:4px;
-    margin-bottom: 2px;
-    color:#4a5f55;
-    }
+    .titulo {
+      font-family: "EB Garamond", serif;
+      font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-top: 0; /* Asegura que no tenga espacio extra arriba */
+      margin-bottom: 2px;
+      color: #4a5f55;
+  }  
   
 
 /* PRIMER NOMBRE */
 .nombres {
-    font-family: "alianafont", cursive; /* Añadí un fallback genérico */
-    font-size: 70px;
-    color: #5c7569;
-    display: block;
-    line-height: 1;
-    margin-top: 40px; /* Reducido para que no quede tan abajo */
-    margin-bottom: -10px; /* Ajustado para que el '&' no lo tape */
-    text-align: center;
-  }
+  font-family: "alianafont", cursive;
+  font-size: 40px;
+  color: #5c7569;
+  display: block;
+  line-height: 1;
+  margin-top: 10px; /* Lo bajamos de 40px a 10px para subir el texto */
+  margin-bottom: -10px;
+  text-align: center;
+}
   
   /* SÍMBOLO & */
   .and {
@@ -86,18 +87,18 @@ body {
     color: #4a5f55;
     display: block;
     line-height: 2;
-    margin-bottom: -5px; /* Ajustado para acercar a Juan */
+    margin-bottom: -3px; /* Ajustado para acercar a Juan */
     text-align: center;
   }
   
   /* SEGUNDO NOMBRE */
   .nombres1 {
     font-family: "alianafont", cursive;
-    font-size: 70px;
+    font-size: 50px;
     color: #5c7569;
     display: block;
     line-height: 0.2;
-    margin-top: 0;
+    margin-top: 15;
     text-align: center;
   }
 
@@ -944,4 +945,38 @@ section {
   0% { transform: scale(1); }
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
+}
+
+.logo-santander{
+    width: 140px;
+    margin-bottom: 15px;
+}
+
+.transferencia h3{
+    font-size: 30px;
+    color: #8b6f47;
+    margin-bottom: 10px;
+}
+
+.transferencia p{
+    color: #666;
+    font-size: 18px;
+}
+
+
+
+
+.datos-trasferencia {
+    color: #666;
+    font-size: 18px;
+}
+
+.numero-tarjeta {
+    color: #5c7569;
+    font-size: 18px;
+}
+
+.nombre-titular {
+    color: #5c7569;
+    font-size: 18px;
 }
