@@ -111,6 +111,11 @@ const familias = {
         dulce:[
         "Dulce Madriz"
         ],
+       
+        Ale2:[
+        "Alejandra ",
+        "Esposo ",	
+        ],
         
         netotorre:[
         "Ernesto Torres"
@@ -376,10 +381,350 @@ const familias = {
 
         Al1:[
                 "Alejandra ",	
-                ]
-        
+                ],
+                
+         Ale2:[
+                "Alejandra ",	
+                ],
+
+    marcela:[
+        "Marcela Villarreal"
+    ],
+
+
+    claudia_villa:[
+        "Claudia Villarreal "
+    ],
+
+
+    orlando:[
+        "Orlando",
+        "Acompañante"
+    ],
+
+
+    lucia:[
+        "Lucia"
+    ],
+
+
+    tia_gaby:[
+        "Gabriela Villarreal",
+        "Rodolfo Tamez"
+    ],
+
+
+    dani:[
+        "Daniel Tamez"
+    ],
+
+
+    carlos:[
+        "Carlos Tamez "
+    ],
+
+
+    tia_adriana:[
+        "Adriana Villarreal"
+    ],
+
+
+    adriana:[
+        "Adriana",
+	"Acompañante",
+    ],
+
+
+    andrea:[
+        "Andrea",
+        "Acompañante"
+    ],
+
+
+    tio_juan:[
+        "Juan Martin",
+        "Carmen"
+    ],
+
+
+    regina:[
+        "Regina",
+        "Acompañante"
+    ],
+
+
+    juan_carlos:[
+        "Juan Carlos"
+    ],
+
+
+    tia_paty:[
+        "Patricia Villarreal",
+        "Oscar Benavides"
+    ],
+
+
+    paty:[
+        "Paty"
+    ],
+
+
+    adrian:[
+        "Adrian"
+    ],
+
+
+    tia_alma:[
+        "Alma Villarreal",
+        "Roberto Chapa"
+    ],
+
+
+    roberta:[
+        "Roberta",
+        "Rodrigo"
+    ],
+
+
+    pato:[
+        "Pato",
+        "Acompañante"
+    ],
+
+
+
+
+    cristy:[
+        "Cristy",
+        "Tia Aurora",
+    ],
+
+
+    chuy:[
+        "Chuy"
+    ],
+
+
+    tia_esthela:[
+        "Tia Esthela"
+    ],
+
+
+    maria_esthela:[
+        "Maria Esthela",
+        "Acompañante"
+    ],
+
+
+    maria_elena:[
+        "Maria Elena",
+        "Acompañante"
+    ],
+
+
+    tia_rosalinda:[
+        "Tia Rosalinda"
+    ],
+
+
+    papas:[
+        "Papa",
+        "mama"
+    ],
+
+
+    hermano:[
+        "Luis",
+        "Alejandra"
+    ],
+
+
+    hermana:[
+        "Susana",
+        "Devang"
+    ],
+
+
+    fer_costa:[
+        "Fer Costa",
+        "Acompañante"
+    ],
+
+
+    pato_ruiz:[
+        "Pato Ruiz",
+        "Natalia"
+    ],
+
+
+    monica_saca:[
+        "Monica Saca"
+    ],
+
+
+    chava_cortes:[
+        "Chava Cortes",
+        "Laura"
+    ],
+
+
+    salvador_cortes:[
+        "Salvador Cortes",
+        "Mama chava"
+    ],
+
+
+    oscar_cortes:[
+        "Oscar Cortes",
+        "Ana Pau"
+    ],
+
+
+    andres_martinez:[
+        "Andres Martinez",
+        "Abigail"
+    ],
+
+
+    agustin:[
+        "Agustin"
+    ],
+
+
+    chano:[
+        "Chano",
+        "Acompañante"
+    ],
+
+
+    andres_carrasco:[
+        "Andres Carrasco",
+        "Daniela"
+    ],
+
+
+    rodrigo_ortega:[
+        "Rodrigo Ortega",
+        "Rita"
+    ],
+
+
+    alonso:[
+        "Alonso",
+        "Mayra"
+    ],
+
+
+    juan_chavez:[
+        "Juan Chavez",
+        "Laly Felix"
+    ],
+
+
+    miguel_sandoval:[
+        "Miguel Sandoval",
+        "Viviana"
+    ],
+
+
+    david_brasil:[
+        "David ",
+        "Brenda"
+    ],
+
+
+    pepe_mendivil:[
+        "Pepe Mendivil",
+        "Acompañante"
+    ],
+
+
+    andres_soule:[
+        "Andres Soule",
+        "Acompañante"
+    ],
+
+
+    irene:[
+        "Irene",
+	  "Acompañante"
+    ],
+
+
+    alan_barmak:[
+        "Alan Barmak",
+        "Acompañante"
+    ],
+
+
+    pepelu:[
+        "Pepelu",
+        "Andrea"
+    ],
+
+
+    tono:[
+        "Toño",
+        "Alejandra"
+    ],
+
+
+    pablo_arias:[
+        "Pablo ",
+        "Elda"
+    ],
+
+
+    grimaldo:[
+        "Grimaldo",
+        "Monica"
+    ],
+
+
+    obed_gonzalez:[
+        "Obed Gonzalez",
+        "Acompañante"
+    ],
+
+
+    alejandro_camarillo:[
+        "Alejandro Camarillo",
+        "Karla"
+    ],
+
+
+    max_camarillo:[
+        "Max Camarillo",
+        "Ale"
+    ],
+
+
+    ivan_romero:[
+        "Ivan Romero",
+        "Luisa"
+    ],
+
+
+    luis_gutierrez:[
+        "Luis Gutierrez",
+        "Acompañante"
+    ],
+
+
+    jessica_zepeda:[
+        "Jessica Zepeda",
+        "Acompañante"
+    ],
+
+
+    joaquin_quintanilla:[
+        "Joaquin Quintanilla",
+        "Mariana"
+    ]
+
 
 };
+
 // obtener invitados
 let invitados = familias[familiaID];
 
