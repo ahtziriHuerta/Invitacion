@@ -32,12 +32,12 @@ body {
 .invitation-wrapper {
     position: relative;
     width: 450px;
-    height: 950px;
+    height: 85vh; /* 🔥 antes 950px */
+    max-height: 750px;
     background: #ffffff;
     box-shadow: 0 25px 60px rgba(0,0,0,0.15);
     overflow: hidden;
     cursor: pointer;
-    /* Evita el cuadro blanco al final */
     border: none;
     outline: none;
 }
@@ -128,7 +128,7 @@ body {
 .main-wrapper {
     position: relative;
     width: 380px;
-    height: 750px; /* Ajusta según el largo de tu invitación */
+    height: 85vh; /* 🔥 antes 750px */
     margin: 0 auto;
 }
 
@@ -168,23 +168,26 @@ body {
 
     .invitation-wrapper {
         width: 95%;
+        height: 82vh;
     }
 
     .main-wrapper {
         width: 95%;
+        height: 82vh;
     }
 
     .top-text {
-        font-size: 32px; /* 🔥 más chico */
+        font-size: 32px;
+    }
+
+    .bottom-text {
+        bottom: 15px;
+        font-size: 12px;
     }
 
     .seal {
         width: 60px;
         height: 60px;
-    }
-
-    .seal-inner {
-        font-size: 14px;
     }
 
 }
