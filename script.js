@@ -112,11 +112,7 @@ const familias = {
         "Dulce Madriz"
         ],
        
-        Ale2:[
-        "Alejandra ",
-        "Esposo ",	
-        ],
-        
+               
         netotorre:[
         "Ernesto Torres"
         ],
@@ -299,7 +295,7 @@ const familias = {
         
         chu:[
             "Valeria",
-            "Hermana"
+            "alejandra"
         ],
         
         ericka:[
