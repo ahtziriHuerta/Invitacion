@@ -357,7 +357,9 @@ const familias = {
         ],
         
         richi:[
-        "Ricardo Marquez"
+        "Ricardo Marquez",
+        "Acompañante"
+
         ],
         
         grecia:[
