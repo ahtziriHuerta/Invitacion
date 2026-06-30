@@ -392,18 +392,18 @@ const familias = {
 
 
     claudia_villa:[
-        "Claudia Villarreal "
+        "Claudia Villarreal"
     ],
 
 
     orlando:[
-        "Orlando",
+        "Orlando Lopez",
         "Acompañante"
     ],
 
 
     lucia:[
-        "Lucia"
+        "Lucia Lopez"
     ],
 
 
@@ -419,7 +419,7 @@ const familias = {
 
 
     carlos:[
-        "Carlos Tamez "
+        "Carlos Tamez"
     ],
 
 
@@ -430,7 +430,7 @@ const familias = {
 
     adriana:[
         "Adriana",
-	"Acompañante",
+		"Acompañante",
     ],
 
 
@@ -441,7 +441,7 @@ const familias = {
 
 
     tio_juan:[
-        "Juan Martin",
+        "Juan Martin Villarreal",
         "Carmen"
     ],
 
@@ -464,12 +464,12 @@ const familias = {
 
 
     paty:[
-        "Paty"
+        "Paty Benavides"
     ],
 
 
     adrian:[
-        "Adrian"
+        "Adrian Benavides"
     ],
 
 
@@ -480,13 +480,13 @@ const familias = {
 
 
     roberta:[
-        "Roberta",
+        "Roberta Chapa",
         "Rodrigo"
     ],
 
 
     pato:[
-        "Pato",
+        "Pato Chapa",
         "Acompañante"
     ],
 
@@ -494,13 +494,13 @@ const familias = {
 
 
     cristy:[
-        "Cristy",
+        "Cristy Ordaz",
         "Tia Aurora",
     ],
 
 
     chuy:[
-        "Chuy"
+        "Chuy Ordaz"
     ],
 
 
@@ -527,20 +527,20 @@ const familias = {
 
 
     papas:[
-        "Papa",
-        "mama"
+        "Luis Antonio Ordaz Ramirez",
+        "Nora Susana Villarreal Ramos"
     ],
 
 
     hermano:[
-        "Luis",
-        "Alejandra"
+        "Luis Ordaz",
+        "Alejandra Gaytan"
     ],
 
 
     hermana:[
-        "Susana",
-        "Devang"
+        "Susana Ordaz",
+        "Devang Shah"
     ],
 
 
@@ -569,7 +569,7 @@ const familias = {
 
     salvador_cortes:[
         "Salvador Cortes",
-        "Mama chava"
+        "Alicia Gutierrez"
     ],
 
 
@@ -627,8 +627,8 @@ const familias = {
 
 
     david_brasil:[
-        "David ",
-        "Brenda"
+        "David M.",
+        "Brenda N."
     ],
 
 
@@ -643,13 +643,6 @@ const familias = {
         "Acompañante"
     ],
 
-
-    irene:[
-        "Irene",
-	  "Acompañante"
-    ],
-
-
     alan_barmak:[
         "Alan Barmak",
         "Acompañante"
@@ -657,26 +650,26 @@ const familias = {
 
 
     pepelu:[
-        "Pepelu",
-        "Andrea"
+        "Jose Herrera",
+        "Andrea Aguiar"
     ],
 
 
     tono:[
-        "Toño",
+        "Antonio Santiago",
         "Alejandra"
     ],
 
 
     pablo_arias:[
-        "Pablo ",
-        "Elda"
+        "Pablo Arias",
+        "Elda Gomez"
     ],
 
 
     grimaldo:[
-        "Grimaldo",
-        "Monica"
+        "Jose Grimaldo",
+        "Monica A."
     ],
 
 
@@ -688,13 +681,13 @@ const familias = {
 
     alejandro_camarillo:[
         "Alejandro Camarillo",
-        "Karla"
+        "Karla P."
     ],
 
 
     max_camarillo:[
         "Max Camarillo",
-        "Ale"
+        "Ale G."
     ],
 
 
@@ -718,8 +711,18 @@ const familias = {
 
     joaquin_quintanilla:[
         "Joaquin Quintanilla",
-        "Mariana"
+        "Mariana H."
     ]
+	
+	omar_gonzalez: [
+		"Omar Gonzalez",
+		"Acompañante"
+	]
+	
+	roy_reyna: [
+		"Rogelio Reyna",
+		"Acompañante"
+	]
 
 
 };
