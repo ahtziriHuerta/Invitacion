@@ -447,13 +447,13 @@ const familias = {
 
 
     regina:[
-        "Regina",
+        "Regina Villarreal",
         "Acompañante"
     ],
 
 
     juan_carlos:[
-        "Juan Carlos"
+        "Juan Carlos Villarreal"
     ],
 
 
@@ -481,12 +481,12 @@ const familias = {
 
     roberta:[
         "Roberta Chapa",
-        "Rodrigo"
+        "Rodrigo Mireles"
     ],
 
 
     pato:[
-        "Pato Chapa",
+        "Patricio Chapa",
         "Acompañante"
     ],
 
@@ -545,14 +545,14 @@ const familias = {
 
 
     fer_costa:[
-        "Fer Costa",
+        "Fernando Costa",
         "Acompañante"
     ],
 
 
     pato_ruiz:[
-        "Pato Ruiz",
-        "Natalia"
+        "Patricio Ruiz",
+        "Natalia Leal"
     ],
 
 
@@ -562,26 +562,26 @@ const familias = {
 
 
     chava_cortes:[
-        "Chava Cortes",
+        "Salvador Cortés",
         "Laura"
     ],
 
 
     salvador_cortes:[
-        "Salvador Cortes",
-        "Alicia Gutierrez"
+        "Salvador Cortés",
+        "Alicia Gutiérrez"
     ],
 
 
     oscar_cortes:[
-        "Oscar Cortes",
-        "Ana Pau"
+        "Oscar Cortés",
+        "Ana Pau Alanis"
     ],
 
 
     andres_martinez:[
         "Andres Martinez",
-        "Abigail"
+        "Avilenne Lozada"
     ],
 
 
@@ -604,7 +604,7 @@ const familias = {
 
     rodrigo_ortega:[
         "Rodrigo Ortega",
-        "Rita"
+        "Rita Quintero"
     ],
 
 
@@ -622,7 +622,7 @@ const familias = {
 
     miguel_sandoval:[
         "Miguel Sandoval",
-        "Viviana"
+        "Viviana Vanoye"
     ],
 
 
@@ -693,7 +693,7 @@ const familias = {
 
     ivan_romero:[
         "Ivan Romero",
-        "Luisa"
+        "Luisa Villarreal"
     ],
 
 
