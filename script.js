@@ -57,6 +57,7 @@ const url = "https://script.google.com/macros/s/AKfycbyGa5_3MdzaugZyMPIn84xSYhRM
 const params = new URLSearchParams(window.location.search);
 const familiaID = params.get("familia");
 
+
 // base de familias
 const familias = {
 
@@ -727,59 +728,73 @@ const familias = {
 
 };
 
-// obtener invitados
-let invitados = familias[familiaID];
-
-// mostrar invitados en la página
-if(invitados){
+const invitados = familias[familiaID];
 
 let lista = document.querySelector(".lista");
 
-invitados.forEach(nombre => {
+invitados.forEach((nombre, index) => {
 
-let item = document.createElement("label");
+    let item = document.createElement("div");
+    item.className = "persona";
 
-item.innerHTML = `
-<input type="checkbox" value="${nombre}">
-${nombre}
-`;
+    item.innerHTML = `
+        <span class="nombre">${nombre}</span>
 
-lista.appendChild(item);
+        <div class="respuesta">
+            <label>
+                <input type="radio" name="asiste_${index}" value="SI">
+                Sí
+            </label>
+
+            <label>
+                <input type="radio" name="asiste_${index}" value="NO">
+                No
+            </label>
+        </div>
+    `;
+
+    lista.appendChild(item);
 
 });
 
-}else{
-
-document.querySelector(".lista").innerHTML = "Invitación no válida";
-
-}
 function confirmar(){
 
     let invitadosConfirmacion = [];
-    
-    document.querySelectorAll('.lista input[type="checkbox"]').forEach(c => {
-    
-    invitadosConfirmacion.push({
-    nombre: c.value,
-    asiste: c.checked ? "SI" : "NO"
+
+    let incompleto = false;
+
+    document.querySelectorAll('.persona').forEach(persona => {
+
+        const nombre = persona.querySelector('.nombre').textContent;
+        const respuesta = persona.querySelector('input[type="radio"]:checked');
+
+        if(!respuesta){
+            incompleto = true;
+        }
+
+        invitadosConfirmacion.push({
+            nombre: nombre,
+            asiste: respuesta ? respuesta.value : ""
+        });
+
     });
-    
-    });
-    
-    let familia = familiaID;
-    
-    fetch(url,{
-    method:"POST",
-    body: new URLSearchParams({
-    familia: familia,
-    invitados: JSON.stringify(invitadosConfirmacion)
-    })
-    })
-    .then(res => res.text())
-    .then(() => mostrarMensaje("¡Gracias por confirmar! ❤️"))
-    .catch(() => mostrarMensaje("Ocurrió un error, intenta nuevamente"));
-    
+
+    if(incompleto){
+        mostrarMensaje("Por favor selecciona Sí o No para todos los invitados.");
+        return;
     }
+
+    fetch(url,{
+        method:"POST",
+        body:new URLSearchParams({
+            familia: familiaID,
+            invitados: JSON.stringify(invitadosConfirmacion)
+        })
+    })
+    .then(res=>res.text())
+    .then(()=>mostrarMensaje("¡Gracias por confirmar! ❤️"))
+    .catch(()=>mostrarMensaje("Ocurrió un error, intenta nuevamente"));
+}
 
 const musica = document.getElementById("musica");
 const btnMusica = document.getElementById("btnMusica");
