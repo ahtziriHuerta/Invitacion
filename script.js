@@ -713,12 +713,12 @@ const familias = {
     joaquin_quintanilla:[
         "Joaquin Quintanilla",
         "Mariana H."
-    ]
+    ],
 	
 	omar_gonzalez: [
 		"Omar Gonzalez",
 		"Acompañante"
-	]
+	],
 	
 	roy_reyna: [
 		"Rogelio Reyna",
