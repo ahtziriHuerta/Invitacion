@@ -404,7 +404,7 @@ const familias = {
 
 
     lucia:[
-        "Lucia Lopez"
+        "Lucía Lopez"
     ],
 
 
@@ -430,13 +430,13 @@ const familias = {
 
 
     adriana:[
-        "Adriana",
+        "Adriana Gonzalez",
 		"Acompañante",
     ],
 
 
     andrea:[
-        "Andrea",
+        "Andrea Gonzalez",
         "Acompañante"
     ],
 
@@ -481,7 +481,7 @@ const familias = {
 
 
     roberta:[
-        "Roberta Chapa",
+        "Robertha Chapa",
         "Rodrigo Mireles"
     ],
 
@@ -492,13 +492,13 @@ const familias = {
     ],
 
 
-
-
-    cristy:[
-        "Cristy Ordaz",
-        "Tia Aurora",
+	tia_aurora:[
+        "Tia Aurora"
     ],
 
+    cristy:[
+        "Cristy Ordaz"
+    ],
 
     chuy:[
         "Chuy Ordaz"
