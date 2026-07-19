@@ -723,6 +723,11 @@ const familias = {
 	roy_reyna: [
 		"Rogelio Reyna",
 		"Acompañante"
+	],
+	
+	julian_mirabal: [
+		"Julian Mirabal",
+		"Acompañante"
 	]
 
 
