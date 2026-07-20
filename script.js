@@ -406,7 +406,7 @@ const familias = {
     lucia:[
         "Lucía Lopez",
 		"Acompañante"
-    ],
+    ],	
 
 
     tia_gaby:[
@@ -728,6 +728,16 @@ const familias = {
 	
 	julian_mirabal: [
 		"Julian Mirabal",
+		"Acompañante"
+	],
+	
+	oso_garcia: [
+		"Carlos Garcia",
+		"Acompañante"
+	],
+	
+	javi_r: [
+		"Javier R.",
 		"Acompañante"
 	]
 
