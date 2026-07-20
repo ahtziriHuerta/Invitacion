@@ -404,7 +404,8 @@ const familias = {
 
 
     lucia:[
-        "Lucía Lopez"
+        "Lucía Lopez",
+		"Acompañante"
     ],
 
 
