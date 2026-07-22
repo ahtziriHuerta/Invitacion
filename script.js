@@ -359,7 +359,7 @@ const familias = {
         
         richi:[
         "Ricardo Marquez",
-        "Acompañante"
+        "Ricardo +1"
 
         ],
         
@@ -399,13 +399,13 @@ const familias = {
 
     orlando:[
         "Orlando Lopez",
-        "Acompañante"
+        "Orlando +1"
     ],
 
 
     lucia:[
         "Lucía Lopez",
-		"Acompañante"
+		"Lucia +1"
     ],	
 
 
@@ -432,13 +432,13 @@ const familias = {
 
     adriana:[
         "Adriana Gonzalez",
-		"Acompañante",
+		"Adriana +1",
     ],
 
 
     andrea:[
         "Andrea Gonzalez",
-        "Acompañante"
+        "Andrea +1"
     ],
 
 
@@ -450,7 +450,7 @@ const familias = {
 
     regina:[
         "Regina Villarreal",
-        "Acompañante"
+        "Regina +1"
     ],
 
 
@@ -489,7 +489,7 @@ const familias = {
 
     pato:[
         "Patricio Chapa",
-        "Acompañante"
+        "Patricio +1"
     ],
 
 
@@ -513,13 +513,13 @@ const familias = {
 
     maria_esthela:[
         "Maria Esthela",
-        "Acompañante"
+        "Maria Esthela +1"
     ],
 
 
     maria_elena:[
         "Maria Elena",
-        "Acompañante"
+        "Maria Elena +1"
     ],
 
 
@@ -548,7 +548,7 @@ const familias = {
 
     fer_costa:[
         "Fernando Costa",
-        "Acompañante"
+        "Fernando +1"
     ],
 
 
@@ -594,7 +594,7 @@ const familias = {
 
     chano:[
         "Chano",
-        "Acompañante"
+        "Chano +1"
     ],
 
 
@@ -636,18 +636,18 @@ const familias = {
 
     pepe_mendivil:[
         "Pepe Mendivil",
-        "Acompañante"
+        "Pepe +1"
     ],
 
 
     andres_soule:[
         "Andres Soule",
-        "Acompañante"
+        "Andres +1"
     ],
 
     alan_barmak:[
         "Alan Barmak",
-        "Acompañante"
+        "Alan +1"
     ],
 
 
@@ -677,7 +677,7 @@ const familias = {
 
     obed_gonzalez:[
         "Obed Gonzalez",
-        "Acompañante"
+        "Obed +1"
     ],
 
 
@@ -701,13 +701,13 @@ const familias = {
 
     luis_gutierrez:[
         "Luis Gutierrez",
-        "Acompañante"
+        "Luis +1"
     ],
 
 
     jessica_zepeda:[
         "Jessica Zepeda",
-        "Acompañante"
+        "Jessica +1"
     ],
 
 
@@ -718,27 +718,27 @@ const familias = {
 	
 	omar_gonzalez: [
 		"Omar Gonzalez",
-		"Acompañante"
+		"Omar +1"
 	],
 	
 	roy_reyna: [
 		"Rogelio Reyna",
-		"Acompañante"
+		"Rogelio +1"
 	],
 	
 	julian_mirabal: [
 		"Julian Mirabal",
-		"Acompañante"
+		"Julian +1"
 	],
 	
 	oso_garcia: [
 		"Carlos Garcia",
-		"Acompañante"
+		"Carlos +1"
 	],
 	
 	javi_r: [
 		"Javier R.",
-		"Acompañante"
+		"Javier +1"
 	]
 
 
