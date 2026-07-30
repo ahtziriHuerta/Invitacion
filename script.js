@@ -382,9 +382,9 @@ const familias = {
                 "Alejandra ",	
                 ],
                 
-         Ale2:[
+         AleGarcia:[
                 "Alejandra ",	
-                 "Esposo"
+                 "Ale Esposo +1"
                 ],
 
     marcela:[
