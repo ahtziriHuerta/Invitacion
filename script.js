@@ -570,7 +570,7 @@ const familias = {
 
 
     salvador_cortes:[
-        "Salvador Cortés",
+        "Salvador Cortés González",
         "Alicia Gutiérrez"
     ],
 
