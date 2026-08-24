@@ -408,12 +408,13 @@ const familias = {
     ],
 
 	Caro:[
-        "Carolina ",
+        "Carolina Amezquita ",
+		"Carolina Amezquita +1 "
     ],
 
 	Lalo :[
-        "Eduardo ",
-		"Eduardo +1 "
+        "Eduardo  Lias",
+		"Eduardo Lias +1 "
     ],
 
     marcela:[
