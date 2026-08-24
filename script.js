@@ -386,6 +386,35 @@ const familias = {
                 "Alejandra ",	
                  "Ale Esposo +1"
                 ],
+	
+	paty_moreno:[
+        "Paty Moreno",
+		"Paty moreno +1"
+    ],
+
+	OscarGomez:[
+        "Oscar Gomez ",
+		"Janette Buenrostro "
+    ],
+
+	RobertoS:[
+        "Roberto Sanchez ",
+		"Elsa Navarro"
+    ],
+	
+	FelipeS:[
+        "Felipe Sanchez ",
+		"Felipe Sanchez +1 "
+    ],
+
+	Caro:[
+        "Carolina ",
+    ],
+
+	Lalo :[
+        "Eduardo ",
+		"Eduardo +1 "
+    ],
 
     marcela:[
         "Marcela Villarreal"
