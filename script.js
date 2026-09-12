@@ -391,6 +391,11 @@ const familias = {
         "Paty Moreno",
 		"Paty moreno +1"
     ],
+	
+	Mundo:[
+        "Edmundo Pineda",
+		"Edmundo Pineda +1"
+    ],
 
 	OscarGomez:[
         "Oscar Gomez ",
