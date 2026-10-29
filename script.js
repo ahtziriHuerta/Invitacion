@@ -61,9 +61,19 @@ const familiaID = params.get("familia");
 // base de familias
 const familias = {
 
+
     america:[
         "America Huerta",
         "Oscar Chavez"
+        ],
+	
+        felipe:[
+        "felipe",
+        "felipe +1"
+        ],
+	    anita:[
+        "Anita Rosas",
+        "Anita Rosas +1"
         ],
         
         julio:[
