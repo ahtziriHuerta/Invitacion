@@ -68,8 +68,8 @@ const familias = {
         ],
 	
         felipe:[
-        "felipe",
-        "felipe +1"
+        "Felipe",
+        "Felipe +1"
         ],
 	    anita:[
         "Anita Rosas",
